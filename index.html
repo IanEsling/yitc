@@ -6,6 +6,15 @@
     <link href='http://fonts.googleapis.com/css?family=Modern+Antiqua' rel='stylesheet' type='text/css'>
     <link href="reset.css" rel="stylesheet" type="text/css"/>
     <link href="yitc.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cycle.lite.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.slideshow').cycle({
+                fx: 'fade'
+            });
+        });
+    </script>
 </head>
 <body>
 <h1 id="logo">Yoga in the City,<br> Yoga by the Sea</h1>
@@ -24,8 +33,13 @@
         </ul>
     </div>
     <div id="main">
-        <div>
-            <img src="Janadecfront1.jpg" alt="bendy">
+        <div style="height: 330px;">
+            <div class="slideshow">
+                <img src="Janadecfront1.jpg" alt="bendy">
+                <img src="main1.jpg" alt="bendy">
+                <img src="main2.jpg" alt="bendy">
+                <img src="main3.jpg" alt="bendy">
+            </div>
         </div>
         <div class="text">
             We specialise in teaching hatha yoga with an influence of Shadow Yoga; running classes and courses in the
